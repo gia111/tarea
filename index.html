@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>contact.me</title>
+</head>
+<body>
+<header>
+        <div class="container-logo">
+            <img src="img/logo.png" alt="conection">
+            <h1>NOTAS</h1>
+        </div>
+</header>
+<article>
+	<section class="container-form">
+			<form>
+                 
+                <div class="cin">
+                    <label for="TEMA">Tema:</label><input type="text" id="TEMA">
+                </div>
+                <div class="cin">
+                    <label for="celular">Números telefónicos:</label>
+                    <input type="tel" id="celular">
+                    <input type="tel" id="celular0">
+                    <input type="tel" id="celular1">
+                </div>
+                <div class="cin">
+                    <label for="correo">Correos:</label>
+                    <input type="email" id="correo">
+                    <input type="email" id="correo0">
+                    <input type="email" id="correo1">
+                </div>
+                <div class="cin">
+                	<select id="relacion" class="relacion">
+                     <label for="relación">Tipo de nota:</label>
+                <option value="select">Seleccionar</option>		
+                <option value="friend">Económico</option>
+                <option value="family">Familiar</option>
+                <option value="work">Trabajo/Estudio</option>
+                <option value="unknown">Desconocido</option>
+                <option value="others">Otro</option>
+            </select>
+                </div>
+                <div class="cin2">
+                    <label for="description">Descripción:</label>
+                    <textarea id="descripcion"></textarea>
+
+                </div>
+                <button type="submit" id="guardar-btn">GUARDAR</button>
+                <button type="clear" id="clear-btn" >LIMPIAR</button>
+            </form>
+        </section>
+	<section>
+		<div>
+		<div class="container">
+            <div class="contacts" id="lista">
+                
+            </div>
+        </div>
+        <dialog id="editForm">
+            <div class="header-dialog">
+                <h1>Editar datos</h1>
+                <div>
+                    <button id="close-dialog">Close</button>
+                </div>
+            </div>
+
+            <div class="container-form-edit">
+                <form>
+                    <div class="input-item-edit">
+                        <label for="TEMA">TEMA</label><input type="text" id="TEMA-edit">
+                    </div>
+                    <div class="input-item-edit">
+                        <label for="celular">Celular-a</label><input type="tel" id="celular-edit">
+                    </div>
+                    <div class="input-item-edit">
+                        <label for="celular">Celular-b</label><input type="tel" id="celular0-edit">
+                    </div>
+                    <div class="input-item-edit">
+                        <label for="celular">Celular-c</label><input type="tel" id="celular1-edit">
+                    </div>
+                    <div class="input-item-edit">
+                        <label for="correo">Correo-a</label><input type="email" id="correo-edit" disabled>
+                    </div>
+                    <div class="input-item-edit">
+                        <label for="correo">Correo-b</label><input type="email" id="correo0-edit" disabled>
+                    </div>
+                    <div class="input-item-edit">
+                        <label for="correo">Correo-c</label><input type="email" id="correo1-edit" disabled>
+                    </div>
+                    <div class="input-item-edit">
+                	<select id="relacion-edit" class="relacion">Tipo de nota:
+                         
+                <option value="select">Seleccionar</option>		
+                <option value="friend">Amigo(a)</option>
+                <option value="family">Familia</option>
+                <option value="work">Trabajo</option>
+                <option value="unknown">Desconocido</option>
+                </select>
+                <div class="input-item-edit">
+                    <label for="description">Descripción:</label>
+                    <textarea id="describe-edit"></textarea>
+
+                </div>
+                    <button id="guardar-edit-btn">Guardar</button>
+                </form>
+            </div>
+        </dialog> 
+	</div>
+		</section>
+	
+</article>
+    <script src="js/java.js"></script>
+
+</body>
+</html>
